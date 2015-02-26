@@ -19,6 +19,13 @@ body {
   padding-bottom: 20px;
 }
 
+/* Add top margin to navbar when WP user is logged in and WP admin bar is showing */
 .admin-bar .navbar-fixed-top {
 	margin-top: 32px;
+}
+
+/* Set background colour of active menu item to black 
+TO DO: Need to fix so that it doesn't go away on hover */
+.current-menu-item > a {
+	background: #000;
 }
