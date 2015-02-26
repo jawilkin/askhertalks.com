@@ -14,7 +14,7 @@
 
   </head>
 
-  <body>
+  <body <?php body_class(); ?>>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
