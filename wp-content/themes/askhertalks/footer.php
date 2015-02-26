@@ -1,7 +1,7 @@
       <hr>
 
       <footer>
-        <p>&copy; Company 2014</p>
+        <p>&copy; Stephen Lewis Foundation <?php echo date('Y'); ?></p>
       </footer>
     </div> <!-- /container -->
 
