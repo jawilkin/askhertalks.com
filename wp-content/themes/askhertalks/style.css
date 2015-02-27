@@ -69,3 +69,19 @@ body {
 	color: #fff;
 	font-weight: bold;
 }
+
+
+/* Page Sidebar*/ 
+.sidebar {
+	margin-top: 40px;
+	color: #444;
+}
+
+.sidebar h3 {
+	color: #888;
+}
+
+/* Widgets */ 
+.widget {
+	margin: 10px 0 30px;
+}
