@@ -91,9 +91,16 @@ article.post {
 	margin: 20px 0 40px;
 }
 
-/* Images in Portfolio */
-.portfolio-piece img {
+/* Portfolio */
+.portfolio-piece img, 
+.portfolio-image img {
 	max-width: 100%;
+}
+
+.prev-next {
+	font-size: 24px;
+	margin-top: 30px;
+	text-align: right;
 }
 
 @media (max-width:540px) {
@@ -102,4 +109,9 @@ article.post {
 		font-size: .8em;
 	}
 
+	.prev-next {
+		font-size: 18px;
+		margin-top: 30px;
+	}
 }
+
