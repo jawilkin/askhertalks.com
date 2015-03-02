@@ -14,6 +14,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 /* Move down content because we have a fixed navbar that is 50px tall */
+
+.jumbotron {
+	background-color: #861f41;
+	color: #eee;
+}
+
+
 body {
   padding-top: 50px;
   padding-bottom: 20px;

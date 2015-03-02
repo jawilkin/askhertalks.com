@@ -4,7 +4,49 @@ Theme URI: http://askhertalks.com/
 Author: Jessica Wilkin
 Author URI: http://jessicawilkin.com
 Description: Theme for Stephen Lewis Foundation lecture series, The Ask Her Talks; Child Theme of Bootstrap 3 Template
-Template: bootstrap3
 Version: 1.0
+Template: bootstrap3
 Text Domain: askhertalks
 */
+
+/*Jumbotron*/
+.jumbotron {
+	background-color: #861f41;
+}
+
+/*Front Page*/
+#front-page-dates {
+	border-top: 1px solid #861f41;
+	border-bottom: 1px solid #861f41;
+}
+
+#front-page-dates h3 {
+	text-align: center;
+}
+
+/*Navigation*/
+
+.navbar {
+	background-color: #ffffff;
+	border-bottom: 1px solid #861f41;
+}
+
+.navbar li a,
+.navbar-brand {
+	color: #000;
+}
+
+.sub-menu {
+	background: #eee;
+}
+
+.current-menu-item > a, .current-menu-parent > a {
+	background: #eee;	
+}
+.current-menu-parent li a {
+	background: inherit;
+}
+.current-menu-parent .current-menu-item a {
+	color: #fff;
+	font-weight: bold;
+}
