@@ -92,6 +92,7 @@ article.post {
 }
 
 /* Portfolio */
+.featured-image img,
 .portfolio-piece img, 
 .portfolio-image img {
 	max-width: 100%;
