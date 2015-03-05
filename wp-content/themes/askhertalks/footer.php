@@ -4,7 +4,6 @@
     <footer class="footer">
       	<div class="container">
       		<div class="row" id="footer-content">
-
       			<div class="col-sm-10" id="contact-info">
       				<h2>Contact</h2>
       				<p>

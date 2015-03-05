@@ -1,25 +1,26 @@
 <?php get_header(); ?>
 
-  <div class="container">
+    <div class="jumbotron">
+      <div class="container">
 
-    <div class="row row-offcanvas row-offcanvas-right">
-      <div class="col-md-9">
+        <img src="<?php bloginfo('stylesheet_directory');?>/images/askher_header.png" class="img-responsive">
 
-        <p class="pull-right visible-xs">
-          <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle Sidebar</button>
-        </p>
+      </div>
+    </div>
+
+
+  <div class="container page-container">
+
+    <div class="row">
+
+      <div class="col-md-12 page-main-content">
         
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
           <div class="page-header">
             <h1><?php the_title(); ?></h1>
 
-            <?php 
-              $thumbnail_id = get_post_thumbnail_id();
-              $thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true );
-              $thumbnail_meta = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
-            ?>
-            <p class="featured-image"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo $thumbnail_meta; ?>"></p>
+            
             
           </div>
 
@@ -37,7 +38,18 @@
 
       </div>
 
-      <?php get_sidebar(); ?>
+      <!--<?php
+        if ( is_page( 86 ) ) :
+          get_sidebar( 'city1' );
+        elseif ( is_page( 89 ) ) :
+          get_sidebar( 'city2' );
+        elseif ( is_page( 91 ) ) :
+          get_sidebar( 'city3' );        
+        else :
+          get_sidebar();
+        endif;
+      ?>-->
+
 
     </div>
 

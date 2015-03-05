@@ -63,4 +63,8 @@ create_widget( 'Front Page Right', 'front-right', 'Displays on the right of the 
 create_widget( 'Page Sidebar', 'page', 'Displays on the side of pages with a sidebar');
 create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blog section');
 
+create_widget( 'City1 Page Sidebar', 'city1', 'Displays on the side of City1 Page');
+create_widget( 'City2 Page Sidebar', 'city2', 'Displays on the side of City2 Page');
+create_widget( 'City3 Page Sidebar', 'city3', 'Displays on the side of City3 Page');
+
 ?>

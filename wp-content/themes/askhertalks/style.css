@@ -12,12 +12,31 @@ Text Domain: askhertalks
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
 
+/*General Layout Styles*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 .container,
 .jumbotron .container {
 	max-width: 1030px;
 }
 
-.main-content p {
+.jumbotron {
+	background-color: #861f41;
+}
+
+
+/*Typography*/
+
+p {
 	font-family: 'Droid Serif';
 	font-size: 1.35em;
 	line-height: 1.7em;
@@ -29,11 +48,11 @@ h1 {
 	font-size: 3.3em;
 	margin-bottom: 0.5em;
 	color: #861f41;
+	text-align: center;
 }
 
 h2 {
 	font-family: 'Montserrat';
-	line-height: 0.5em;
 }
 
 h3 {
@@ -49,59 +68,42 @@ h4 {
 	margin-bottom: 15px;
 }
 
-
-body {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-/*Jumbotron*/
-.jumbotron {
-	background-color: #861f41;
-}
-
-/*Front Page*/
-
-@media (max-width:768px) {
-	.city-widget {
-		margin-bottom: 10px;
-	}
-}
-
-.city-widget-inner {
-	background-color: #eee;
-	background-image: url('images/diagonal-noise.png');
-	padding: 5px;
-}
-
-#front-page-dates {
-	border-bottom: 1px solid #861f41;
-	padding-bottom: 2.5em;
+.sidebar h2 {
+	font-size: 1.6em;
+	margin-bottom: 15px;
 }
 
 #front-page-dates h2 {
 	text-align: center;
+	line-height: 0.5em;
 }
 
-.btn-default {
+#footer-content p {
 	font-family: 'Montserrat';
+	color: #58595b;
+	font-size: 0.85em;
+	line-height: 1.3em;
 }
 
-.btn-default:hover {
-	color: #ffffff;
-	background-color: #861f41;
-	border-color: #861f41;
+.footer h2 {
+	font-size: 1.3em;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	margin-top: 15px;
 }
 
-#intro-container{
-	margin-top: 10px;
-	margin-bottom: -50px;
+.speaker-name{
+	font-family: 'Montserrat';
+	margin-top: 0px;
+	text-align: center;
 }
 
-@media (min-width:768px) {
-	#intro-container {
-		max-width: 82%;
-	}
+.speaker-title {
+	font-family: 'Montserrat';
+	font-style: italic;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 
@@ -111,7 +113,7 @@ body {
 	background-color: #fff;
 	border-bottom: 1px solid #861f41;
 	font-family: 'Montserrat';
-	font-size: 1.15em;
+	font-size: 1.1em;
 }
 
 .navbar-fixed-top {
@@ -122,15 +124,6 @@ body {
 	margin-top: 15px;
 	background-color: #fff;
 }
-
-@media (max-width:768px) {
-	.navbar-collapse {
-	background-color: #eee;
-	background-image: url('images/diagonal-noise.png')
-	}
-}
-
-
 
 .navbar li a,
 .navbar-brand {
@@ -170,16 +163,111 @@ a.navbar-brand{
 	text-decoration: none;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
+
+/*Buttons*/
+
+.btn-default {
+	font-family: 'Montserrat';
 }
+
+.btn-default:hover {
+	color: #ffffff;
+	background-color: #861f41;
+	border-color: #861f41;
+}
+
+.btn-primary,
+.btn-primary:focus {
+	font-family: 'Montserrat';
+	background-color: #fff;
+	border-color: #861f41;
+	border-width: 2px;
+	color: #861f41;
+	outline: none;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+	color: #ffffff;
+	background-color: #861f41;
+	border-color: #861f41;
+}
+
+
+
+/*Links*/
+
+#contact-info a {
+	color: #58595b;
+}
+
+
+/*Collapse*/
+
+.well {
+	background-color: transparent;
+	box-shadow: none;
+	border: none;
+	padding: 0;
+}
+
+
+
+/*General Page Layout*/
+
+.page-header{
+	border: none;
+}
+
+.page-container {
+	margin-top: -35px;
+}
+
+.featured-image img {
+	max-width: 100%;
+	margin-bottom: -15px;
+}
+
+.speaker-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*Sidebar Layouts*/
+
+.sidebar-city {
+	margin-top: 20px;
+}
+
+
+/*Front Page Layout*/
+
+.city-widget-inner {
+	background-color: #eee;
+	background-image: url('images/diagonal-noise.png');
+	padding: 5px;
+}
+
+#front-page-dates {
+	border-bottom: 1px solid #861f41;
+	padding-bottom: 2.5em;
+}
+
+#intro-container{
+	margin-top: 10px;
+	margin-bottom: -50px;
+}
+
+
+/*Footer Layout*/
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 430px;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -193,39 +281,57 @@ body {
 #footer-content {
 	text-align: center;
 	padding-top: 1em;
-	font-family: 'Montserrat';
-	color: #58595b;
-	font-size: 0.85em;
-}
-
-.footer h2 {
-	font-size: 1.3em;
-	line-height: 1.2em;
-	text-transform: uppercase;
-	margin-bottom: 15px;
 }
 
 #contact-info {
 	text-align: center;
-
 }
 
-#contact-info a {
-	color: #58595b;
+
+
+/*Media Queries*/
+
+@media (max-width:768px) {
+	.city-widget {
+		margin-bottom: 10px;
+	}
+	.navbar-collapse {
+		background-color: #eee;
+		background-image: url('images/diagonal-noise.png')
+	}
+	#intro-container {
+		max-width: 82%;
+	}
+}
+
+@media (max-width:989px) {
+	.btn-primary  {
+		width: 100%;
+	}
 }
 
 @media (min-width:768px) {
-	.footer {
-		height: 250px;
-	}
 	body {
 		margin-bottom: 250px;
 	}
-	#contact-info {
+	.footer {
+		height: 250px;
+	}
+	#contact-info,
+	.speaker-title,
+	.speaker-name {
 		text-align: left;
+	}
+	.speaker-img,
+	a.accordion-toggle {
+		display: inline-block;
+		margin: auto;
 	}
 }
 
-.featured-image img {
-	max-width: 100%;
+@media (min-width:992px) {
+
+	.sidebar-city {
+		margin-top: 100px;
+	}
 }

@@ -88,6 +88,7 @@ body {
 	color: #888;
 }
 
+
 /* Widgets */ 
 .widget {
 	margin: 10px 0 30px;
@@ -167,4 +168,3 @@ article.post {
     width: 50%; /* 6 columns */
   }
 }
-
