@@ -9,44 +9,223 @@ Template: bootstrap3
 Text Domain: askhertalks
 */
 
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+
+.container,
+.jumbotron .container {
+	max-width: 1030px;
+}
+
+.main-content p {
+	font-family: 'Droid Serif';
+	font-size: 1.35em;
+	line-height: 1.7em;
+}
+
+h1 {
+	font-family: 'Droid Serif';
+	font-style: italic;
+	font-size: 3.3em;
+	margin-bottom: 0.5em;
+	color: #861f41;
+}
+
+h2 {
+	font-family: 'Montserrat';
+	line-height: 0.5em;
+}
+
+h3 {
+	font-family: 'Droid Serif';
+	font-size: 1.4em;
+	line-height: 1.3em;
+}
+
+h4 {
+	font-family: 'Droid Serif';
+	font-size: 1.2em;
+	line-height: 1.3em;
+	margin-bottom: 15px;
+}
+
+
+body {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
 /*Jumbotron*/
 .jumbotron {
 	background-color: #861f41;
 }
 
 /*Front Page*/
-#front-page-dates {
-	border-top: 1px solid #861f41;
-	border-bottom: 1px solid #861f41;
+
+@media (max-width:768px) {
+	.city-widget {
+		margin-bottom: 10px;
+	}
 }
 
-#front-page-dates h3 {
+.city-widget-inner {
+	background-color: #eee;
+	background-image: url('images/diagonal-noise.png');
+	padding: 5px;
+}
+
+#front-page-dates {
+	border-bottom: 1px solid #861f41;
+	padding-bottom: 2.5em;
+}
+
+#front-page-dates h2 {
 	text-align: center;
 }
+
+.btn-default {
+	font-family: 'Montserrat';
+}
+
+.btn-default:hover {
+	color: #ffffff;
+	background-color: #861f41;
+	border-color: #861f41;
+}
+
+#intro-container{
+	margin-top: 10px;
+	margin-bottom: -50px;
+}
+
+@media (min-width:768px) {
+	#intro-container {
+		max-width: 82%;
+	}
+}
+
 
 /*Navigation*/
 
 .navbar {
-	background-color: #ffffff;
+	background-color: #fff;
 	border-bottom: 1px solid #861f41;
+	font-family: 'Montserrat';
+	font-size: 1.15em;
 }
+
+.navbar-fixed-top {
+	height: 80px;
+}
+
+.navbar-fixed-top .container {
+	margin-top: 15px;
+	background-color: #fff;
+}
+
+@media (max-width:768px) {
+	.navbar-collapse {
+	background-color: #eee;
+	background-image: url('images/diagonal-noise.png')
+	}
+}
+
+
 
 .navbar li a,
 .navbar-brand {
 	color: #000;
 }
 
+a.navbar-brand{
+	color: #000;
+}
+
+.navbar li a:hover {
+	background-image: url('images/diagonal-noise.png');
+}
+
+.icon-bar {
+	background-color: #000;
+}
+
 .sub-menu {
 	background: #eee;
+	background-image: url('images/diagonal-noise.png');
 }
 
 .current-menu-item > a, .current-menu-parent > a {
-	background: #eee;	
+	background: #eee;
+	background-image: url('images/diagonal-noise.png');	
 }
 .current-menu-parent li a {
 	background: inherit;
 }
 .current-menu-parent .current-menu-item a {
-	color: #fff;
-	font-weight: bold;
+	color: #000;
+	font-weight: normal;
+	font-style: italic;
+}
+.current-menu-parent .current-menu-item a:hover {
+	text-decoration: none;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 430px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 430px;
+  background-color: #d2d2d2;
+  background-image: url('images/diagonal-noise.png');
+}
+
+#footer-content {
+	text-align: center;
+	padding-top: 1em;
+	font-family: 'Montserrat';
+	color: #58595b;
+	font-size: 0.85em;
+}
+
+.footer h2 {
+	font-size: 1.3em;
+	line-height: 1.2em;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+#contact-info {
+	text-align: center;
+
+}
+
+#contact-info a {
+	color: #58595b;
+}
+
+@media (min-width:768px) {
+	.footer {
+		height: 250px;
+	}
+	body {
+		margin-bottom: 250px;
+	}
+	#contact-info {
+		text-align: left;
+	}
+}
+
+.featured-image img {
+	max-width: 100%;
 }

@@ -20,11 +20,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	color: #eee;
 }
 
-
 body {
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
+
 
 /* Add top margin to navbar when WP user is logged in and WP admin bar is showing */
 .admin-bar .navbar-fixed-top {
@@ -62,7 +62,7 @@ body {
 }
 
 .sub-menu a:hover  {
-	color: #fff;	
+	color: #861f41;	
 }	
 
 /* Active Links and Menu Items*/ 
@@ -167,3 +167,4 @@ article.post {
     width: 50%; /* 6 columns */
   }
 }
+

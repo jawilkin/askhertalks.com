@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
       <div class="container">
 
@@ -9,27 +8,27 @@
       </div>
     </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
+    <div class="container main-content">
+
       <div class="row" id="front-page-dates">
-        <div class="col-md-4">
-        
-          <?php if ( dynamic_sidebar( 'front-left' ) ); ?>
-
+        <div class="col-sm-4 city-widget">
+          <div class="city-widget-inner">
+            <?php if ( dynamic_sidebar( 'front-left' ) ); ?>
+          </div>
         </div>
-        <div class="col-md-4">
-
-          <?php if ( dynamic_sidebar( 'front-center' ) ); ?>
-
+        <div class="col-sm-4 city-widget">
+          <div class="city-widget-inner">
+            <?php if ( dynamic_sidebar( 'front-center' ) ); ?>
+          </div>
        </div>
-        <div class="col-md-4">
-
-          <?php if ( dynamic_sidebar( 'front-right' ) ); ?>
-
+        <div class="col-sm-4 city-widget">
+          <div class="city-widget-inner">
+            <?php if ( dynamic_sidebar( 'front-right' ) ); ?>
+          </div>
         </div>
       </div>
 
-      <div class="container">
+      <div class="container" id="intro-container">
         <div class="row">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
