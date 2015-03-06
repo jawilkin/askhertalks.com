@@ -37,14 +37,14 @@ body {
 /*Typography*/
 
 p {
-	font-family: 'Droid Serif';
+	font-family: 'Droid Serif', "Cambria", "Lucida Bright", "Times New Roman", serif;
 	font-size: 1.35em;
 	line-height: 1.7em;
 	margin-bottom: 1em;
 }
 
 h1 {
-	font-family: 'Droid Serif';
+	font-family: 'Droid Serif', "Cambria", "Lucida Bright", "Times New Roman", serif;
 	font-style: italic;
 	font-size: 3.3em;
 	margin-bottom: 0.5em;
@@ -53,17 +53,17 @@ h1 {
 }
 
 h2 {
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', "Calibri", "Futura", "Arial", serif;
 }
 
 h3 {
-	font-family: 'Droid Serif';
+	font-family: 'Droid Serif', "Cambria", "Lucida Bright", "Times New Roman", serif;
 	font-size: 1.4em;
 	line-height: 1.3em;
 }
 
 h4 {
-	font-family: 'Droid Serif';
+	font-family: 'Droid Serif', "Cambria", "Lucida Bright", "Times New Roman", serif;
 	font-size: 1.2em;
 	line-height: 1.3em;
 	margin-bottom: 15px;
@@ -87,7 +87,7 @@ h4 {
 }
 
 #footer-content p {
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', "Calibri", "Futura", "Arial", serif;
 	color: #58595b;
 	font-size: 0.85em;
 	line-height: 1.3em;
@@ -114,13 +114,13 @@ h4 {
 }
 
 .speaker-name{
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', "Calibri", "Futura", "Arial", serif;
 	margin-top: 0px;
 	text-align: center;
 }
 
 .speaker-title {
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', "Calibri", "Futura", "Arial", serif;
 	font-style: italic;
 	margin-bottom: 20px;
 	text-align: center;
@@ -132,7 +132,7 @@ h4 {
 .navbar {
 	background-color: #fff;
 	border-bottom: 1px solid #861f41;
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', "Calibri", "Futura", "Arial", serif;
 	font-size: 1.1em;
 }
 
@@ -209,7 +209,7 @@ a.navbar-brand{
 .btn-default,
 .btn-default:active,
 .btn-default:focus {
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', "Calibri", "Futura", "Arial", serif;
 	background-color: #fff;
 	outline: none;
 }
@@ -223,7 +223,7 @@ a.navbar-brand{
 .btn-primary,
 .btn-primary:focus
  {
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', "Calibri", "Futura", "Arial", serif;
 	background-color: #fff;
 	border-color: #861f41;
 	border-width: 2px;
