@@ -44,7 +44,7 @@ p {
 }
 
 h1 {
-	font-family: 'Droid Serif', "Cambria", "Lucida Bright", "Times New Roman", serif;
+	font-family: 'Droid Serif', "Cambria", "Times New Roman", serif;
 	font-style: italic;
 	font-size: 3.3em;
 	margin-bottom: 0.5em;
@@ -54,6 +54,7 @@ h1 {
 
 h2 {
 	font-family: 'Montserrat', "Calibri", "Futura", "Arial", serif;
+	margin-top: 1em;
 }
 
 h3 {
@@ -198,6 +199,7 @@ a.navbar-brand{
 .btn-info {
 	background-color: #939598;
 	border-color: #939598;
+	font-family: 'Montserrat', "Calibri", "Futura", "Arial", serif;
 }
 
 .btn-info:hover {
