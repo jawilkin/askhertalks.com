@@ -40,6 +40,7 @@ p {
 	font-family: 'Droid Serif';
 	font-size: 1.35em;
 	line-height: 1.7em;
+	margin-bottom: 1em;
 }
 
 h1 {
@@ -68,6 +69,13 @@ h4 {
 	margin-bottom: 15px;
 }
 
+.page-container h2 {
+	font-size: 2.6em;
+	margin-top: 0.6em;
+	margin-bottom: -0.5em;
+	text-align: center;
+}
+
 .sidebar h2 {
 	font-size: 1.6em;
 	margin-bottom: 15px;
@@ -91,6 +99,18 @@ h4 {
 	text-transform: uppercase;
 	margin-bottom: 15px;
 	margin-top: 15px;
+}
+
+.date-feature {
+	text-align: center;
+}
+
+.date-feature h3 {
+	font-size: 2em;
+}
+
+.date-feature h4 {
+	font-size: 1.8em;
 }
 
 .speaker-name{
@@ -166,8 +186,32 @@ a.navbar-brand{
 
 /*Buttons*/
 
-.btn-default {
+
+.date-feature .btn-default {
+	width: 100%;
+	margin-top: 1em;
+	font-size: 1em;
+	border-width: 2px;
+	color: #6d6e71;
+}
+
+.btn-info {
+	background-color: #939598;
+	border-color: #939598;
+}
+
+.btn-info:hover {
+	background-color: #6d6e71;
+	border-color: #6d6e71;
+}
+
+
+.btn-default,
+.btn-default:active,
+.btn-default:focus {
 	font-family: 'Montserrat';
+	background-color: #fff;
+	outline: none;
 }
 
 .btn-default:hover {
@@ -177,7 +221,8 @@ a.navbar-brand{
 }
 
 .btn-primary,
-.btn-primary:focus {
+.btn-primary:focus
+ {
 	font-family: 'Montserrat';
 	background-color: #fff;
 	border-color: #861f41;
@@ -217,11 +262,18 @@ a.navbar-brand{
 
 .page-header{
 	border: none;
+	margin-bottom: -10px;
 }
 
 .page-container {
 	margin-top: -35px;
+	margin-bottom: -45px;
 }
+
+#front-page-text {
+	margin-bottom: -4em;
+}
+
 
 .featured-image img {
 	max-width: 100%;
@@ -233,6 +285,25 @@ a.navbar-brand{
 	margin-left: auto;
 	margin-right: auto;
 }
+
+.city-img {
+	border-radius: 200px;
+	box-shadow: 0 0 2px 1px #D4D4D4;
+	margin-top: -45px;
+}
+
+.date-feature {
+	border-top: 1px solid #861f41;
+	padding-top: 1em;
+	margin-top: -30px;
+}
+
+.date-description {
+	border-bottom: 1px solid #861f41;
+	padding-bottom: 1em;
+	margin-top: -20px;
+}
+
 
 
 /*Sidebar Layouts*/
@@ -299,23 +370,27 @@ body {
 		background-color: #eee;
 		background-image: url('images/diagonal-noise.png')
 	}
-	#intro-container {
-		max-width: 82%;
-	}
-}
-
-@media (max-width:989px) {
 	.btn-primary  {
 		width: 100%;
 	}
 }
 
+@media (max-width:989px) {
+	.date-feature {
+		margin-bottom: -50px;
+		padding-top: 0px;
+	}
+	.footer-sponsor h2 {
+		margin-top: 1.5em;
+	}
+}
+
 @media (min-width:768px) {
 	body {
-		margin-bottom: 250px;
+		margin-bottom: 260px;
 	}
 	.footer {
-		height: 250px;
+		height: 260px;
 	}
 	#contact-info,
 	.speaker-title,
@@ -326,6 +401,16 @@ body {
 	a.accordion-toggle {
 		display: inline-block;
 		margin: auto;
+	}
+	.page-container h2 {
+		text-align: left;
+		margin-top: 0.8em;
+	}
+	#intro-container,
+	.page-text {
+		max-width: 82%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 

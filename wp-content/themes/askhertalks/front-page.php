@@ -28,7 +28,7 @@
         </div>
       </div>
 
-      <div class="container" id="intro-container">
+      <div class="container page-text" id="front-page-text">
         <div class="row">
           <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

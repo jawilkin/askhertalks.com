@@ -21,7 +21,7 @@
       				<p style="font-size: 0.875em;">&copy; Stephen Lewis Foundation <?php echo date('Y'); ?></p>
       			</div>
 
-      			<div class="col-sm-2">
+      			<div class="col-sm-2 footer-sponsor">
       				<h2>Participant<br/>Partner</h2>
       				<p><a href="http://www.warchild.ca/" target="_blank"><img src="<?php bloginfo('stylesheet_directory');?>/images/war-child-canada-logo.jpg" ></a></p>
       			</div>

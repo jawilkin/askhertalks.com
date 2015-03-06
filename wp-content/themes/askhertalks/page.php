@@ -19,9 +19,6 @@
 
           <div class="page-header">
             <h1><?php the_title(); ?></h1>
-
-            
-            
           </div>
 
           <?php the_content(); ?>
@@ -37,19 +34,6 @@
         <?php endif; ?>
 
       </div>
-
-      <!--<?php
-        if ( is_page( 86 ) ) :
-          get_sidebar( 'city1' );
-        elseif ( is_page( 89 ) ) :
-          get_sidebar( 'city2' );
-        elseif ( is_page( 91 ) ) :
-          get_sidebar( 'city3' );        
-        else :
-          get_sidebar();
-        endif;
-      ?>-->
-
 
     </div>
 
