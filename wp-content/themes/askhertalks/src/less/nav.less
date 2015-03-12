@@ -1,0 +1,123 @@
+.navbar {
+	font-family: @Montserrat;
+	background-color: @pantone208;
+	margin-bottom: -20px;
+	font-size: 1.2em;
+	li a {
+		color: #fff;
+	}
+	li a:hover {
+		background-color: @pantone208;
+		color: #000;
+	}
+}
+
+.navbar-static-top {
+	height: 80px;
+}
+
+.navbar .container {
+	margin-top: 15px;
+}
+
+.navbar-collapse {
+	@media(max-width:768px) {
+		background-color: #eee;
+		background-image: url('images/diagonal-noise.png');
+	}
+}
+
+
+.navbar-brand,
+a.navbar-brand {
+	color: #000;
+}
+
+//Bootstrap Stylez
+.navbar-brand {
+  display: inline-block;
+  position: absolute;
+  z-index: 1000;
+  float: left;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  width: 380px;
+  height: 310px;
+  margin-top:-20px;
+  //background-color: @pantone208;
+}
+
+.navbar-brand > img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: -15px;
+  }
+}
+//Bootstrap Stylez
+
+
+.icon-bar {
+	background-color: #000;
+}
+
+
+
+/* Active Links and Menu Items*/ 
+
+.current-menu-item > a, .current-menu-parent > a, .current-menu-parent li a {
+	background-image: url('images/diagonal-noise.png');
+}
+.current-menu-parent li a {
+	background: inherit;
+}
+.current-menu-parent .current-menu-item a {
+	font-weight: normal;
+	font-style: italic;
+}
+.current-menu-parent .current-menu-item a:hover {
+	text-decoration: none;
+}
+
+
+
+/* Drop-down menus */
+
+.sub-menu {
+	li {
+		margin-bottom: 10px;
+		list-style: none;
+	}
+	li:last-child {
+		margin-bottom: 0;
+	}
+	a {
+		color: #999;
+		text-decoration: none;
+	}
+	a:hover {
+		color: @pantone208;
+	}
+	@media (min-width:768px) {
+		background: #eee;
+		background-image: url('images/diagonal-noise.png');
+		display: none;
+		position: absolute;
+		background: #222;
+		padding: 10px 15px;
+		width: 200px;
+	}
+}
+
+@media (min-width:768px) {
+	li:hover .sub-menu {
+		display: block;
+		background-image: url('images/diagonal-noise.png');
+	}
+}

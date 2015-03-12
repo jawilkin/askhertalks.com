@@ -1,0 +1,25 @@
+{
+  "name": "askhertalks",
+  "version": "0.0.1",
+  "description": "ask her talks website",
+  "main": "front-page.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/jawilkin/askhertalks.com"
+  },
+  "author": "Jessica Wilkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jawilkin/askhertalks.com/issues"
+  },
+  "homepage": "https://github.com/jawilkin/askhertalks.com",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-less": "^1.0.0",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
